@@ -136,7 +136,7 @@
 		}
 		@-webkit-keyframes hj {
 			100%{
-				transform: translateY(30px);
+				top: -20px;
 				opacity: 1;
 			}
 		}
