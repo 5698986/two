@@ -6,6 +6,7 @@
 			margin: 0;
 			padding: 0;
 			height: 100%;
+			overflow: hidden;
 		}
 
 		#zt{
@@ -217,7 +218,17 @@
 			left:50%;
 			margin-left: -105px;
 		}
-
+		.d33,.d48,.d57{
+			top:280px;
+			transform: scale(0.5);
+			-webkit-animation:d33  1s .5s  alternate 1 backwards;
+		}
+		@-webkit-keyframes d33 {
+			100%{		
+				transform: scale(1.0);
+				opacity: 1;				
+			}
+		}
 
 
 		.d4{
@@ -322,8 +333,11 @@
 			left:50%;
 			margin-left: -110px;
 		}
-
-
+		.d48{
+			top:50px;
+			opacity: 0;
+			-webkit-animation:d33  1s .5s  alternate 1 backwards;	
+		}
 
 
 		.d5{
@@ -420,6 +434,15 @@
 				bottom: 165px;
 			}
 		}
+		.d57{
+			opacity: 0;
+			top: -100px;
+			-webkit-animation:d33  1s .5s  alternate 1 backwards;	
+		}
+
+
+
+
 		.d6{
 			background: #23A7CD;
 		}
@@ -428,7 +451,7 @@
 			background-size: 1077px 141px;
 			position: relative;
 		}
-		.d62,.d64,.d65,.d66,.d67,.d68,.d71{
+		.d62,.d64,.d65,.d66,.d67,.d68,.d71,.d33{
 			opacity: 0;
 		}
 		.d61{
@@ -531,7 +554,7 @@
 				bottom: 70px;
 			}
 		}
-		.d68{
+		.d68,.d33,.d48,.d57{
 			width: 61px;
 			height: 28px;
 			position:relative;
@@ -540,10 +563,12 @@
 			left: 50%;
 			margin-left:-31px;
 			bottom: 50px;
+			transform: scale(0.5);
 			-webkit-animation:d68  1s .5s  alternate 1 both;
 		}
 		@-webkit-keyframes d68 {
 			100%{		
+				transform: scale(1);
 				opacity: 1;				
 				bottom: 60px;
 			}
