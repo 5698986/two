@@ -132,7 +132,7 @@
 			top: -50px;
 			opacity:0;
 			background-position:-340px 10px; 
-			-webkit-animation:hj 1s  normal 1 both;		
+			-webkit-animation:hj 1s  normal 1 backwards;		
 		}
 		@-webkit-keyframes hj {
 			100%{
